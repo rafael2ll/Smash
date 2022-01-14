@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@color/primary">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent">
+
+		<ImageView
+			android:layout_height="80dp"
+			android:layout_width="80dp"
+			android:src="@drawable/smash_white"
+			android:layout_margin="10dp"
+			android:id="@+id/headerImageView1"
+			android:scaleType="fitStart"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:text="SmashUp"
+			android:layout_toRightOf="@id/headerImageView1"
+			android:layout_centerVertical="true"
+			android:textSize="30sp"
+			style="@style/RobotoTextViewStyleLight"
+			android:textColor="#FFFFFF"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:layout_margin="10dp"
+		android:id="@+id/headerTextViewUser"
+		style="@style/RobotoTextViewStyleLight"
+		android:textColor="#FFFFFF"/>
+
+</LinearLayout>
+

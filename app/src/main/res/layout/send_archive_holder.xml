@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<android.support.v7.widget.CardView
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/card_view"
+		android:layout_marginTop="5dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		card_view:cardCornerRadius="2dp">
+
+		<RelativeLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_height="50dp"
+			android:layout_width="match_parent">
+			<View
+					android:layout_height="wrap_content"
+					android:layout_width="10dp"
+					android:layout_below="@id/card_view"
+					android:background="#E93E33"
+					android:id="@+id/sendarchiveholderView"/>
+			
+			<RelativeLayout
+				android:layout_centerVertical="true"
+				android:layout_height="50dp"
+				android:layout_width="wrap_content"
+				android:gravity="center_vertical"
+				android:layout_toRightOf="@id/sendarchiveholderView"
+				android:background="#ECECEC">
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="match_parent"
+					android:text="Medium Text"
+					android:singleLine="true"
+					android:paddingLeft="10dp"
+					android:ellipsize="marquee"
+					android:marqueeRepeatLimit="marquee_forever"
+					android:id="@+id/sendarchiveholderTextView1"
+					android:textSize="15sp"
+					android:textColor="#32302F"
+					android:layout_marginBottom="3dp"/>
+
+				<TextView
+					android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="match_parent"
+					android:text="Small Text"
+					android:paddingLeft="10dp"
+					android:singleLine="true"
+					android:ellipsize="marquee"
+					android:marqueeRepeatLimit="marquee_forever"
+					android:layout_below="@id/sendarchiveholderTextView1"
+					android:id="@+id/sendarchiveholderTextView2"
+					android:textColor="#504E4D"/>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+		
+	</android.support.v7.widget.CardView>
+
+</RelativeLayout>
+

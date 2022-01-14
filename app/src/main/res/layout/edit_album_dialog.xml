@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/edit_album_dialogTextInputLayoutNome"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp">
+
+		<EditText
+			android:id="@+id/edit_album_dialogEditTextNome"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Nome"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:id="@+id/edit_album_dialogTextInputLayoutYear"
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:layout_below="@id/edit_album_dialogTextInputLayoutNome">
+
+		<EditText
+			android:id="@+id/edit_album_dialogEditTextYear"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Ano de Lançamento"
+			android:inputType="number"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<CheckBox
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/edit_album_dialogTextInputLayoutYear"
+		android:layout_margin="5dp"
+		android:textSize="17sp"
+		android:id="@+id/editalbumdialogCheckBoxIsSingle"
+		android:text="Single"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="Artista: null"
+		android:layout_below="@id/editalbumdialogCheckBoxIsSingle"
+		android:layout_marginLeft="10dp"
+		android:id="@+id/editalbumdialogTextViewArtistaAtual"/>
+
+	<Spinner
+		android:layout_height="wrap_content"
+		android:layout_width="200dp"
+		android:layout_below="@id/editalbumdialogTextViewArtistaAtual"
+		android:id="@+id/editalbumdialogSpinnerArtista"/>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recycler"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/editalbumdialogSpinnerArtista"
+		android:layout_margin="10dp"/>
+
+	<ImageView
+		android:layout_height="50dp"
+		android:layout_width="wrap_content"
+		android:src="@drawable/save"
+		android:layout_toRightOf="@id/edit_album_dialogTextInputLayoutNome"
+		android:layout_marginTop="5dp"
+		android:id="@+id/editalbumdialogImageViewSave"
+		android:padding="7dp"/>
+
+</RelativeLayout>
+

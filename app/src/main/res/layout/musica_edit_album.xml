@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:layout_margin="10dp"
+	android:orientation="vertical">
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:id="@+id/musicaeditalbumTextInputLayout1">
+
+		<EditText
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Nome"
+			android:id="@+id/musicaeditalbumAutoCompleteTextV1"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:id="@+id/musicaeditalbumTextInputLayout1">
+
+		<AutoCompleteTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Artista"
+			android:id="@+id/musicaeditalbumAutoCompleteTextView2"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:id="@+id/musicaeditalbumTextInputLayout1">
+
+		<AutoCompleteTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Album"
+			android:id="@+id/musicaeditalbumAutoCompleteTextView3"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10dp"
+		android:id="@+id/musicaeditalbumTextInputLayout1">
+
+		<AutoCompleteTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Participação"
+			android:id="@+id/musicaeditalbumAutoCompleteTextView4"/>
+
+	</android.support.design.widget.TextInputLayout>
+
+	<ImageView
+		android:layout_height="50dp"
+		android:layout_width="50dp"
+		android:src="@drawable/save"
+		android:layout_gravity="right"
+		android:layout_margin="10dp"
+		android:id="@+id/musicaeditalbumImageViewSave"
+		android:padding="10dp"/>
+
+</LinearLayout>
+

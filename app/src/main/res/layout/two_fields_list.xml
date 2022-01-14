@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<ImageView
+		android:layout_height="30dp"
+		android:layout_width="30dp"
+		android:src="@drawable/ic_has_not_img"
+		android:layout_alignParentRight="true"
+		android:layout_margin="5dp"
+		android:id="@+id/twofieldslistImageView"
+		android:layout_centerVertical="true"/>
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_toLeftOf="@id/twofieldslistImageView"
+		android:layout_margin="5dp">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="Medium Text"
+			android:textColor="#201F1F"
+			android:id="@+id/twofieldslistTextView1"
+			android:layout_marginBottom="2dp"
+			android:textSize="16sp"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="Small Text"
+			android:layout_below="@id/twofieldslistTextView1"
+			android:id="@+id/twofieldslistTextView2"/>
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

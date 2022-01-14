@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent"
+	android:layout_marginLeft="10dp">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:text="Medium Text"
+		android:id="@+id/sendtaskitemTextViewNome"
+		android:textSize="15sp"
+		android:layout_margin="2dp"
+		android:textColor="#212121"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:text="Small Text"
+		android:layout_below="@id/sendtaskitemTextViewNome"
+		android:layout_margin="2dp"
+		android:id="@+id/sendtaskitemTextViewOther"/>
+
+	<ImageView
+		android:layout_height="30dp"
+		android:layout_width="25dp"
+		android:src="@drawable/ic_delete"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+		android:id="@+id/sendtaskitemImageViewDelete"/>
+
+</RelativeLayout>
+

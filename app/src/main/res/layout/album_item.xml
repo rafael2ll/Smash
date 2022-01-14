@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:layout_marginRight="15dp"
+	android:layout_margin="10dp">
+
+	<ImageView
+		android:layout_height="80dp"
+		android:layout_width="80dp"
+		android:src="@android:drawable/ic_delete"
+		android:id="@+id/albumitemImageView"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Medium Text gijnfd"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:id="@+id/albumitemTextViewNome"
+		android:layout_margin="5dp"
+		android:singleLine="true"
+		android:ellipsize="marquee"
+		android:marqueeRepeatLimit="marquee_forever"
+		android:maxWidth="110dp"
+		android:textColor="#393837"/>
+
+</LinearLayout>
+

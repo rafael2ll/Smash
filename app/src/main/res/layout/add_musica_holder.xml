@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<ImageView
+		android:layout_height="40dp"
+		android:id="@+id/musicuploadModelDelete"
+		android:layout_width="40dp"
+		android:src="@drawable/save"
+		android:layout_alignParentRight="true"
+		android:layout_margin="5dp"
+		android:layout_centerVertical="true"
+		android:padding="8dp"/>
+
+	<EditText
+		android:layout_height="wrap_content"
+		android:inputType="textPersonName"
+		android:ems="10"
+		android:layout_toLeftOf="@id/musicuploadModelDelete"
+		android:layout_width="match_parent"
+		android:id="@+id/musicuploadmodelEditText"
+		android:text="Hiiii"
+		android:textSize="15sp"/>
+
+</RelativeLayout>
+

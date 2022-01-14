@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/main_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:id="@+id/musicuploadacRelativeLayout1">
+
+		<Spinner
+			android:id="@+id/musicaddfragAlbuns"
+			android:layout_height="wrap_content"
+			android:layout_width="250dp"
+			android:layout_centerHorizontal="true"/>
+
+		<ImageView
+			android:layout_height="40dp"
+			android:layout_width="40dp"
+			android:src="@drawable/ic_plus_box"
+			android:id="@+id/musicaaddfragNewAlbum"
+			android:scaleType="fitCenter"
+			android:padding="5dp"
+			android:layout_marginLeft="10dp"
+			android:layout_alignParentRight="true"
+			android:layout_margin="5dp"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="Button"
+			android:layout_below="@id/musicaddfragAlbuns"
+			android:layout_alignParentRight="true"
+			style="@style/Widget.AppCompat.Button.Borderless.Colored"
+			android:layout_margin="5dp"
+			android:id="@+id/musicaaddfragButtonSendAll"/>
+
+	</RelativeLayout>
+
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recyclerView"
+		android:layout_below="@id/musicuploadacRelativeLayout1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	</android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
+
