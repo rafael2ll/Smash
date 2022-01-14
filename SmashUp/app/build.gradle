@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "com.smash.up"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+	repositories {
+	mavenCentral()
+	jCenter()
+    maven {
+        url "https://jitpack.io"
+    	}
+	}
+}
+
+dependencies {
+	
+	compile 'com.google.firebase:firebase-auth:+'
+	compile 'com.google.firebase:firebase-storage:+'
+	compile project(':frags')
+	compile project(':filePicker')
+	
+	compile 'com.cocosw:bottomsheet:+@aar'
+	compile 'com.firebaseui:firebase-ui-database:0.4.0'
+	compile 'com.github.satyan:sugar:1.4'
+	compile 'com.android.support:design:+'
+	compile 'com.squareup.picasso:picasso:+'
+	compile 'com.malinskiy:materialicons:1.0.2'
+	compile 'com.osama.firecrasher:firecrasher:1.0'
+   compile 'jp.wasabeef:picasso-transformations:2.1.0'
+	
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}

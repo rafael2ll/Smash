@@ -1,0 +1,9 @@
+<resources>
+    <string name="google_storage_bucket" translatable="false">smash-bcf6a.appspot.com</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCa4_rD_zKF5sDW1YrwnLQapf-l9RCZiHc</string>
+    <string name="gcm_defaultSenderId" translatable="false">921206007104</string>
+    <string name="google_app_id" translatable="false">1:921206007104:android:55e6a26998003592</string>
+    <string name="default_web_client_id" translatable="false">921206007104-qupv4a42eqc8jqfr8ph0nsg3bjcucg2f.apps.googleusercontent.com</string>
+    <string name="google_api_key" translatable="false">AIzaSyCa4_rD_zKF5sDW1YrwnLQapf-l9RCZiHc</string>
+    <string name="firebase_database_url" translatable="false">https://smash-bcf6a.firebaseio.com</string>
+</resources>

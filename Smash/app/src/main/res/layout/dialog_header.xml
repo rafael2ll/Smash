@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="wrap_content"
+	android:layout_width="250dp"
+	android:background="@color/primary">
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="wrap_content"
+		android:id="@+id/dialogheaderTextView1"
+		android:textColor="#FFFFFF"
+		android:padding="5dp"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_below="@id/dialogheaderTextView1"
+		android:textColor="#FFFFFF"
+		android:paddingLeft="5dp"
+		android:id="@+id/dialogheaderTextView2"/>
+
+</RelativeLayout>
+

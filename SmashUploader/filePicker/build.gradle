@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.0"
+
+    defaultConfig {
+        applicationId "paul.arian.fileselector"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+		}
+	repositories {
+	mavenCentral()
+	jCenter()
+    maven {
+		url "http://repo.commonsware.com"
+    	}
+	}
+}
+
+dependencies {
+	compile 'com.android.support:appcompat-v7:+'
+	compile fileTree(dir: 'libs', include: ['*.jar'])
+}

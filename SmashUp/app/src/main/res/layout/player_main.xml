@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent">
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/statusBarHeight"
+		android:background="#90000000"
+		android:elevation="4dp"
+		android:id="@+id/playermainViewStatusBar"/>
+
+	<ImageView
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:src="@drawable/image_back"
+		android:id="@+id/playermainImageViewBack"/>
+
+	<android.support.v7.widget.Toolbar
+		android:id="@+id/toolbar"
+		android:layout_below="@id/playermainViewStatusBar"
+		android:minHeight="?attr/actionBarSize"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:titleTextColor="@android:color/white"
+		android:background="#90000000">
+
+	</android.support.v7.widget.Toolbar>
+
+	<RelativeLayout
+		android:layout_height="140dp"
+		android:layout_width="match_parent"
+		android:layout_alignParentBottom="true"
+		android:background="#90000000"
+		android:id="@+id/playermainRelativeLayout2">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Medium Text"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:id="@+id/playermainTextViewNome"
+			android:textColor="#FEFEFE"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="Small Text"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:layout_below="@id/playermainTextViewNome"
+			android:layout_centerHorizontal="true"
+			android:textColor="#DFDFDF"
+			android:id="@+id/playermainTextViewArtista"/>
+
+		<ImageView
+			android:layout_height="25dp"
+			android:layout_width="25dp"
+			android:layout_alignParentRight="true"
+			android:layout_margin="5dp"
+			android:id="@+id/playermainImageMore"/>
+
+		<ImageView
+			android:layout_height="25dp"
+			android:layout_width="25dp"
+			android:layout_margin="5dp"
+			android:id="@+id/playermainImageViewAdd"/>
+
+		<RelativeLayout
+			android:layout_height="30dp"
+			android:layout_width="match_parent"
+			android:layout_below="@id/playermainTextViewArtista"
+			android:id="@+id/playermainRelativeLayout1">
+
+			<TextView
+				android:layout_height="match_parent"
+				android:text="0:00"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:id="@+id/playermainTextViewPassed"
+				android:layout_marginLeft="5dp"
+				android:textColor="#FFFFFF"
+				android:gravity="center"/>
+
+			<TextView
+				android:layout_height="match_parent"
+				android:text="5:35"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_width="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="5dp"
+				android:id="@+id/playermainTextView1"
+				android:textColor="#FFFFFF"
+				android:gravity="center"/>
+
+			<SeekBar
+				android:layout_height="30dp"
+				android:layout_toRightOf="@id/playermainTextViewPassed"
+				android:layout_toLeftOf="@id/playermainTextView1"
+				android:layout_marginRight="10dp"
+				android:layout_marginLeft="10dp"
+				android:id="@+id/playermainSeekBarCompat"
+				android:layout_width="wrap_content"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_below="@id/playermainRelativeLayout1">
+
+			<ImageView
+				android:layout_height="20dp"
+				android:layout_width="20dp"
+				android:src="@android:drawable/ic_delete"
+				android:layout_centerVertical="true"
+				android:layout_margin="5dp"
+				android:id="@+id/playermainImageViewShuffle"/>
+
+			<ImageView
+				android:layout_height="20dp"
+				android:layout_width="20dp"
+				android:src="@android:drawable/ic_delete"
+				android:id="@+id/playermainImageViewRepeat"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_margin="5dp"/>
+
+			<ImageView
+				android:layout_height="35dp"
+				android:layout_width="35dp"
+				android:layout_marginLeft="50dp"
+				android:layout_centerVertical="true"
+				android:id="@+id/playermainImageViewPrev"
+				android:layout_toRightOf="@id/playermainImageViewShuffle"
+				android:src="@drawable/skip_previous"/>
+
+			<ImageView
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:layout_centerInParent="true"
+				android:id="@+id/playermainImageViewPlayPause"/>
+
+			<ImageView
+				android:layout_height="35dp"
+				android:layout_width="35dp"
+				android:layout_centerVertical="true"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="75dp"
+				android:id="@+id/playermainImageViewNext"
+				android:layout_toLeftOf="@id/playermainImageViewRepeat"
+				android:src="@drawable/skip_next"/>
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+
+	<android.support.v4.view.ViewPager
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_above="@id/playermainRelativeLayout2"
+		android:id="@+id/playermainViewPager"
+		android:layout_below="@id/toolbar"
+		android:background="#90000000"/>
+
+</RelativeLayout>
+

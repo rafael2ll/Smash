@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="50dp"
+	android:layout_width="match_parent"
+	android:gravity="center_vertical"
+	android:layout_gravity="center_vertical">
+
+	<View
+		android:layout_height="match_parent"
+		android:layout_width="5dp"
+		android:background="@color/accent"
+		android:layout_marginRight="5dp"
+		android:id="@+id/mymusicholderView1"/>
+
+	<ImageView
+		android:layout_height="35dp"
+		android:layout_width="35dp"
+		android:src="@drawable/ic_dots"
+		android:layout_alignParentRight="true"
+		android:padding="5dp"
+		android:id="@+id/mymusicholderImageViewMore"
+		android:layout_marginTop="5dp"/>
+
+	<ImageView
+		android:layout_height="30dp"
+		android:layout_width="35dp"
+		android:src="@drawable/coloric_pulse"
+		android:layout_toLeftOf="@id/mymusicholderImageViewMore"
+		android:id="@+id/mymusicholderImageView1"
+		android:layout_marginTop="7dp"
+		android:visibility="invisible"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="match_parent"
+		android:text="Medium Text"
+		android:id="@+id/mymusicholderTextViewNome"
+		android:textSize="15sp"
+		android:textColor="#303030"
+		android:layout_toLeftOf="@id/mymusicholderImageView1"
+		android:singleLine="true"
+		android:layout_toRightOf="@id/mymusicholderView1"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:text="Small Text"
+		android:layout_below="@id/mymusicholderTextViewNome"
+		android:id="@+id/mymusicholderTextViewArtista"
+		android:layout_toLeftOf="@id/mymusicholderImageView1"
+		android:singleLine="true"
+		android:layout_marginTop="3dp"
+		android:layout_toRightOf="@id/mymusicholderView1"/>
+
+</RelativeLayout>
+

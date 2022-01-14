@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smash.up" >
+	 
+	<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name = "android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+		
+    <application
+        android:allowBackup="true"
+		android:configChanges="keyboardHidden|orientation"
+        android:icon="@mipmap/ic_launcher"
+		android:name=".MyApplication"
+        android:label="@string/app_name"
+        android:theme="@style/STheme" >
+		
+		<meta-data android:name="DATABASE" android:value="upload_state.db" />
+		<meta-data android:name="VERSION" android:value="2" />
+		<meta-data android:name="QUERY_LOG" android:value="true" />
+		<meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.smash.up.Itens" />
+		
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<service
+            android:name=".Itens.MusicService"
+            android:exported="true">
+			<intent-filter>
+				<action android:name="com.smash.up.start" />
+				<action android:name="com.smash.up.stop" />
+				<action android:name="com.smash.up.play" />
+				<action android:name="com.smash.up.pause" />
+				<action android:name="com.smash.up.next" />
+				<action android:name="com.smash.up.prev"/>
+			</intent-filter>
+		</service>
+		<receiver android:name=".Itens.RemoteControlReceiver">
+   			 <intent-filter>
+       			 <action android:name="android.intent.action.MEDIA_BUTTON" />
+   			 </intent-filter>
+		</receiver>
+		<service
+			android:exported="false"
+			android:name=".Itens.TaskService">
+			<intent-filter>
+				<action android:name="com.smash.up.task.cancel" />
+			</intent-filter>
+		</service>
+		<activity
+			android:name=".PlayerActivity"
+			android:label="Reproduzindo..."/>
+		<activity
+			android:label="Send Area"
+			android:name=".SubActivities.SendTasksActivity"/>
+		<activity
+            android:name="paul.arian.fileselector.FileSelectionActivity" />
+		<activity
+            android:name="paul.arian.fileselector.FolderSelectionActivity" />
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

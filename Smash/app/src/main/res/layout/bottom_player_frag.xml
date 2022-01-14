@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:card_view="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/bottomplayerfragCardView"
+	android:layout_alignParentBottom="true"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	card_view:cardCornerRadius="1dp">
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="50dp"
+	android:layout_width="match_parent"
+	android:background="@color/accent">
+
+	<ImageView
+		android:layout_height="50dp"
+		android:layout_width="50dp"
+		android:src="@drawable/ic_album"
+		android:id="@+id/bottomplayerfragImageViewAlbum"/>
+
+	<ImageView
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/ic_skip_next"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:layout_margin="5dp"
+		android:padding="4dp"
+		android:id="@+id/bottomplayerfragImageViewNext"/>
+
+	<ImageView
+		android:layout_height="40dp"
+		android:layout_width="40dp"
+		android:src="@drawable/ic_pause_circle_outline"
+		android:layout_toLeftOf="@id/bottomplayerfragImageViewNext"
+		android:layout_centerVertical="true"
+		android:padding="5dp"
+		android:id="@+id/bottomplayerfragImageViewPlay"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_toLeftOf="@id/bottomplayerfragImageViewPlay"
+		android:layout_toRightOf="@id/bottomplayerfragImageViewAlbum"
+		android:layout_centerVertical="true">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="wrap_content"
+			android:text="Medium Text"
+			android:textColor="#EEECEB"
+			android:id="@+id/bottomplayerfragTextViewNome"
+			android:singleLine="true"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="wrap_content"
+			android:text="Medium Text"
+			android:id="@+id/bottomplayerfragTextViewArtista"
+			android:singleLine="true"
+			android:textColor="#DCDCDC"/>
+
+	</LinearLayout>
+
+	<ProgressBar
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_height="4dp"
+		android:layout_width="match_parent"
+		android:id="@+id/bottomplayerProgressBar"/>
+
+</RelativeLayout>
+</android.support.v7.widget.CardView>

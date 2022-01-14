@@ -1,0 +1,87 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+	<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+		android:checked="false"
+        android:title="Início">
+	</item>
+	</group>
+	
+	<item android:title="Área de Envio">
+	<menu>
+	<group android:checkableBehavior="single">
+			
+	<item
+		android:id="@+id/agendMusicas"
+		android:checked="false"
+		android:title="Agendar Musicas"/>
+	<item
+		android:id="@+id/sendMusics"
+		android:checked="false"
+		android:title="Enviar Músicas"/>
+	</group>
+	</menu>
+	</item>
+	
+	<item android:title="Área de Criação">
+	<menu>
+		<group android:checkableBehavior="single">
+			
+	<item
+		android:id="@+id/createAlbum"
+		android:checked="false"
+		android:title="Criar Album"/>
+	<item
+		android:id="@+id/createArtista"
+		android:checked="false"
+		android:title="Criar Artista"/>
+		</group>
+	</menu>
+	</item>
+	
+	<item android:title="Área de Visualização">
+	<menu>
+		<group android:checkableBehavior="single">
+			
+	<item
+		android:id="@+id/seeMusics"
+		android:checked="false"
+		android:title="Ver Músicas"/>
+	<item
+		android:id="@+id/seeAlbuns"
+		android:checked="false"
+		android:title="Ver albuns"/>
+	<item
+		android:id="@+id/seeArtistas"
+		android:checked="false"
+		android:title="Ver artistas"/>
+    </group>
+	</menu>
+	</item>
+	
+	<item android:title= "Minha Área">
+	<menu>
+		<group android:checkableBehavior="single">
+		<item
+			android:id="@+id/player"
+			android:checked="false"
+			android:title="Tocando Agora"/>
+		<item
+			android:id="@+id/my_musics"
+			android:checked="false"
+			android:title="Minhas Músicas"/>
+		<item
+			android:id="@+id/my_albuns"
+			android:checked="false"
+			android:title="Meus Álbuns"/>
+		<item
+			android:id="@+id/my_artists"
+			android:checked="false"
+			android:title="Meus Artistas"/>
+	</group>
+	</menu>
+	</item>
+</menu>

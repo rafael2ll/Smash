@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent">
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:gravity="center_horizontal"
+		android:id="@+id/mainfragRelativeLayout1">
+
+		<ImageView
+			android:layout_height="300dp"
+			android:layout_width="300dp"
+			android:src="@drawable/some_smash_trans"
+			android:id="@+id/mainfragImageView1"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"/>
+
+		<LinearLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainfragImageView1"
+			android:gravity="center"
+			android:orientation="vertical">
+
+			<ImageView
+				android:layout_height="100dp"
+				android:layout_width="wrap_content"
+				android:src="@drawable/firebase"
+				android:layout_centerHorizontal="true"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="SmashUp"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="match_parent"
+			android:textColor="#F51900"
+			android:textStyle="bold"
+			android:gravity="bottom|center_horizontal|clip_vertical"
+			android:textSize="20sp"
+			android:layout_alignParentBottom="true"/>
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:layout_below="@id/mainfragRelativeLayout1"
+		android:gravity="center_horizontal">
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="30dp"
+	android:layout_width="match_parent">
+
+	<ImageView
+		android:layout_height="25dp"
+		android:layout_width="25dp"
+		android:layout_alignParentRight="true"
+		android:id="@+id/sendtaskitemImageViewCancel"
+		android:layout_margin="5dp"
+		android:src="@drawable/plus_circle"/>
+
+	<ProgressBar
+		android:layout_height="4dp"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_width="100dp"
+		android:layout_toLeftOf="@id/sendtaskitemImageViewCancel"
+		android:id="@+id/sendtaskitemProgressBar"
+		android:layout_margin="10dp"
+		android:layout_centerHorizontal="true"
+		android:progressDrawable="@drawable/progress"/>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="Where Skyes Break hhg niknn dd gy bibxxr  hbcxdg   butdx  kygvn   xf"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="wrap_content"
+		android:layout_toLeftOf="@id/sendtaskitemProgressBar"
+		android:layout_alignParentLeft="true"
+		android:maxLines="1"
+		android:id="@+id/sendtaskitemTextViewNome"
+		android:layout_margin="5dp"
+		android:textColor="#000000"/>
+
+</RelativeLayout>
+

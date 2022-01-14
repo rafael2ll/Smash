@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "921206007104",
+    "firebase_url": "https://smash-bcf6a.firebaseio.com",
+    "project_id": "smash-bcf6a",
+    "storage_bucket": "smash-bcf6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921206007104:android:55e6a26998003592",
+        "android_client_info": {
+          "package_name": "com.smash.music"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921206007104-qupv4a42eqc8jqfr8ph0nsg3bjcucg2f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa4_rD_zKF5sDW1YrwnLQapf-l9RCZiHc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
